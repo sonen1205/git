@@ -1,0 +1,37 @@
+th.custom-width {
+    width: 360px;
+}
+
+@media only screen and (max-width : 768px) {
+    th.custom-width {
+        width: 207px;
+    }
+    table {
+        font-size: 12px;
+    }
+    .text-justify {
+        text-align: left !important;
+    }
+}
+
+.toast-position {
+    position: fixed;
+    min-height: 200px;
+    width: 200px;
+    right: 25px;
+    top: 25px;
+}
+
+.toast {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toast-header {
+    border: none;
+}
+
+a.no-underline:hover {
+    text-decoration: none;
+}

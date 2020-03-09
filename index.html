@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="lib/css/bootstrap.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="lib/css/bootstrap-grid.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="lib/css/bootstrap-reboot.min.css"  media="screen,projection"/>
+    <!-- <link type="text/css" rel="stylesheet" href="lib/icons/css/all.min.css"  media="screen,projection"/> -->
+    <!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"  media="screen,projection"/> -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="css/global.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="section">
+            <div class="container">
+                <img src="media/image/gitLogo.png" width="250" height="250" class="d-block mx-auto" alt="Node logo">
+                <h4 class="text-center custom-text-color-grey">Commands Table</h4>
+                <div class="section">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <table class="table table-borderless table-hover custom-text-color-grey table-responsive-sm table-responsive-md">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" class="text-center"> Copy </th>
+                                        <th scope="col"> Command Name </th>
+                                        <th scope="col" class="custom-width"> Description </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip0" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git --version</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            view the current version of git.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip1" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git clone&nbsp;<span>https://github.com/user/repo.git</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            clone a remote repository locally.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip2" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git init</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            initialized local .git repository to your project folder.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip3" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git status</code>
+                                        </th>
+                                        <td class="text-justify">check status of a working project tree.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip4" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git add&nbsp;<span>yourfile.js</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            add a specific file to the staging area.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip5" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git add *.js</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            add all specific file extensions to the staging area.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip6" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git add .</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            add all files to the staging area.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip7" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git commit</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            commit changes to the staging area, you need to type your message.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip8" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git commit -m&nbsp;<span>'your message.'</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            short command for <code>git commit</code>, <code>-m</code> stands for message.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip9" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git push&nbsp;<span>https://github.com/user/repo.git</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            push changes to the remote repository.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip10" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git pull&nbsp;<span>https://github.com/user/repo.git</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            pull latest version to the remote repository.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip11" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git log</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            see all the previous commits.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip12" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git branch&nbsp;<span>branchnamme</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            create a new working branch.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip13" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git checkout&nbsp;<span>branchnamme</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            switch to a specific branch.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip14" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git checkout -b&nbsp;<span>branchnamme</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            create and switch to this specific branch.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip15" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git checkout master</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            switch to the master branch.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip16" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git checkout&nbsp;<span>4566787bc...</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            switch to a specific commit log.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip17" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git merge&nbsp;<span>branchname</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            merge the current branch to the another branch. 
+                                            if you are in the <strong>master branch</strong> 
+                                            and you merge the <strong>branchname</strong>, 
+                                            changes in the <strong>branchname</strong> will 
+                                            merge or apply to the <strong>master branch</strong> 
+                                            else, if you are in the <strong>branchname</strong> 
+                                            and you merge the <strong>master branch</strong>, 
+                                            changes in the <strong>master branch</strong> will 
+                                            merge or apply to the <strong>branchname</strong> 
+                                            instead.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip18" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>touch&nbsp;<span>yourfilename.js</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            create new file to your project folder.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip19" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>touch .gitignore </code>
+                                        </th>
+                                        <td class="text-justify">
+                                            initialize the .gitignore txt file, you can add all 
+                                            the <strong>list of folders and files here ("including their file extension.")</strong> 
+                                            that you <strong>don't want to get added</strong> 
+                                            in the git terminal.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip20" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git remote add origin&nbsp;<span>https://github.com/user/repo.git</span></code>
+                                        </th>
+                                        <td class="text-justify">
+                                            connects your current local repository to the github 
+                                            repository.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip21" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>git push -u origin master</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            push you local master repository to the github repository, 
+                                            you must <strong>connect your current local repository</strong> 
+                                            to the <strong>github repository</strong> first, before doing 
+                                            this.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            <a id="tip22" href="#!" class="copy-text" data-toggle="tooltip" data-placement="left" title="Copy This Command."><i class="fas fa-copy text-dark"></i></a>
+                                        </th>
+                                        <th scope="row">
+                                            <code>touch README.md</code>
+                                        </th>
+                                        <td class="text-justify">
+                                            creates a <strong>README.md (mark down)</strong> file to your 
+                                            project folder, it must be all uppercase. README 
+                                            provides the description of the project when you 
+                                            are in github, you can add list of changes here 
+                                            to see what is the current status of the project 
+                                            your working on and add some version update decriptions.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="toast-position" aria-live="polite" aria-atomic="true">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="1500">
+            <div class="toast-header bg-dark">
+                <strong class="mr-auto text-white">Text Copied</strong>
+                <a href="#!" class="text-white" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    &nbsp;&nbsp;<i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container section text-dark text-right position-relative">
+            <a href="https://github.com/sonen1205" class="text-dark no-underline"><i class="fab fa-github"></i>&nbsp;sonen1205</a>  
+        </div>
+    </footer>
+
+    <div id="hidden"></div>
+
+    <script type="text/javascript" src="lib/jquery/jquery3.4.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

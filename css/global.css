@@ -1,0 +1,11 @@
+.section { padding-top: 1rem; padding-bottom: 1rem; }
+
+body {
+    display: flex;
+    min-height: 99vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
